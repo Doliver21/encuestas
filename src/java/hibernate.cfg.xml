@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory>
-        <property name="connection.datasource">java:/comp/env/jdbc/encuestas</property>
-        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-        <property name="hibernate.show_sql">false</property>
-
-        <!-- Incluir la cache de 2º Nivel EHCache-->
-        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
-        <property name="hibernate.cache.use_second_level_cache">true</property>
-        <property name="hibernate.cache.use_query_cache">true</property>
-
-        <!-- Definición de las encuestas -->
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/Encuesta.hbm.xml"/>
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/Pregunta.hbm.xml"/>
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/Item.hbm.xml"/>
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/ListaValores.hbm.xml"/>
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/Valor.hbm.xml"/>
-        <!-- Respuestas de las encuestas -->
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/respuestas/RespuestaEncuesta.hbm.xml"/>
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/respuestas/RespuestaPregunta.hbm.xml"/>
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/respuestas/RespuestaItem.hbm.xml"/>
-        <!-- Respuestas de las educacion -->
-        <mapping resource="es/logongas/encuestas/persistencia/impl/dao/educacion/Curso.hbm.xml"/>
-
-        <!-- Definición de la seguridad -->
-        <mapping resource="es/logongas/ix3/model/persistence/impl/dao/Identity.hbm.xml"/>
-        <mapping resource="es/logongas/ix3/model/persistence/impl/dao/GroupMember.hbm.xml"/>
-        <mapping resource="es/logongas/ix3/model/persistence/impl/dao/ACE.hbm.xml"/>
-        <mapping resource="es/logongas/ix3/model/persistence/impl/dao/Permission.hbm.xml"/>
-        <mapping resource="es/logongas/ix3/model/persistence/impl/dao/SecureResource.hbm.xml"/>
-        <mapping resource="es/logongas/ix3/model/persistence/impl/dao/SecureResourceType.hbm.xml"/>
-    </session-factory>
+  <session-factory>
+    <property name="connection.datasource">java:/comp/env/jdbc/encuestas</property>
+    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="hibernate.show_sql">false</property>
+    <!-- Incluir la cache de 2º Nivel EHCache-->
+    <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+    <property name="hibernate.cache.use_second_level_cache">true</property>
+    <property name="hibernate.cache.use_query_cache">true</property>
+    <!-- Definición de las encuestas -->
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/Encuesta.hbm.xml"/>
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/Pregunta.hbm.xml"/>
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/Item.hbm.xml"/>
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/ListaValores.hbm.xml"/>
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/encuestas/Valor.hbm.xml"/>
+    <!-- Respuestas de las encuestas -->
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/respuestas/RespuestaEncuesta.hbm.xml"/>
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/respuestas/RespuestaPregunta.hbm.xml"/>
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/respuestas/RespuestaItem.hbm.xml"/>
+    <!-- Respuestas de las educacion -->
+    <mapping resource="es/logongas/encuestas/persistencia/impl/dao/educacion/Curso.hbm.xml"/>
+    <!-- Definición de la seguridad -->
+    <mapping resource="es/logongas/ix3/model/persistence/impl/dao/Identity.hbm.xml"/>
+    <mapping resource="es/logongas/ix3/model/persistence/impl/dao/GroupMember.hbm.xml"/>
+    <mapping resource="es/logongas/ix3/model/persistence/impl/dao/ACE.hbm.xml"/>
+    <mapping resource="es/logongas/ix3/model/persistence/impl/dao/Permission.hbm.xml"/>
+    <mapping resource="es/logongas/ix3/model/persistence/impl/dao/SecureResource.hbm.xml"/>
+    <mapping resource="es/logongas/ix3/model/persistence/impl/dao/SecureResourceType.hbm.xml"/>
+  </session-factory>
 </hibernate-configuration>

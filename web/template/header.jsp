@@ -6,12 +6,14 @@
 <link rel="stylesheet" media="screen" href="<%=request.getContextPath()%>/css/lib/angular/angular-ui-0.4.0.css">
 <link rel="stylesheet" media="screen" href="<%=request.getContextPath()%>/css/style.css">
 <link rel="stylesheet" media="print" href="<%=request.getContextPath()%>/css/style_print.css">
+<script type='text/javascript' src="<%=request.getContextPath()%>/js/lib/lodash/lodash-1.3.1.js"></script>
 <script type='text/javascript' src="<%=request.getContextPath()%>/js/lib/jquery/jquery-1.9.0.js"></script>
 <script type='text/javascript' src="<%=request.getContextPath()%>/js/lib/jquery/jquery-ui-1.9.2.js"></script>
 <script type='text/javascript' src="<%=request.getContextPath()%>/js/lib/bootstrap/bootstrap-2.3.1.js"></script>
 <script type='text/javascript' src='<%=request.getContextPath()%>/js/lib/angular/angular-1.0.5.js'></script>
 <script type='text/javascript' src='<%=request.getContextPath()%>/js/lib/angular/angular-locale_es-es-1.0.5.js'></script>
 <script type='text/javascript' src='<%=request.getContextPath()%>/js/lib/angular/angular-ui-0.4.0.js'></script>
+<script type='text/javascript' src='<%=request.getContextPath()%>/js/lib/angular/restangular-1.0.10.js'></script>
 <script type='text/javascript' src="<%=request.getContextPath()%>/js/widgets.js"></script>
 <script type='text/javascript' src="<%=request.getContextPath()%>/js/angular-directives.js"></script>
 <script type='text/javascript'>
